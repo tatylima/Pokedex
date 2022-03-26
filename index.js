@@ -48,19 +48,34 @@ const pokedex = [
 ]
 
 
+//Rotas
 
-app.get('/home',  (req, res) => {
+app.get('/',  (req, res) => {
   res.render('index', {pokedex})
 });
 app.get('/cadastro',  (req, res) => {
   res.render('cadastro')
 });
+app.post('/add',  (req, res) => {
+    const pokemon = req.body;
+    pokemon.id = pokedex.length+1;
+    pokedex.push(pokemon);
+    res.redirect('/');
+});
+
+app.get('/detalhes/:id',  (req, res) => {
+  const id = +req.params.id - 1;
+  const pokemon = pokedex[id];
+  res.render('detalhes', {pokemon});
+  
+});
+
 app.get('/detalhes',  (req, res) => {
-  res.render('detalhes')
-});
-app.post('/adicionar',  (req, res) => {
-  res.send('Olá mundo')
+
+  res.redirect('/');
 });
 
 
-app.listen(3000 , () => console.log("Servidor rodando em http://localhost:3000/home"));
+app.listen ( port, ( )=>
+  console.log(`Servidor rodando em http://localhost: ${port}`)
+);

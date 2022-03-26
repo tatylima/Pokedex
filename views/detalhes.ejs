@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+</head>
+<body>
+    <main>
+        <section id = "detalhes">
+            <h2> 
+                DETALHES 
+            </h2>
+            <form action = "/detalhes" method="get">
+    
+                <img src="<%= pokemon.imagem %>"/>
+                <h2>
+                    Nome: <%=pokemon.nome%>
+                </h2>
+                <p>
+                    ID: <%=pokemon.id%>
+                </p>
+                <p>
+                    Tipo: <%=pokemon.tipo%>
+                </p>
+                <p>
+                    Categoria: <%=pokemon.Categoria%>
+                </p>
+                <p>
+                    Descrição: <%=pokemon.descricao%>
+                </p>
+                <p>
+                    Habilidade: <%=pokemon.Habilidade%> 
+                </p>
+                <p>
+                    Altura: <%=pokemon.Altura%> m
+                </p>
+                <p>
+                    Peso: <%=pokemon.Peso%> Kg   
+                </p>
+            
+                <button id = "retorno" type = "submit">Retornar ao início</button>
+        </form> 
+    </section>
+</main>
+</body>
+<script src = "script.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <section id = "cadastro">
+        <main>
+        <h2> CADASTRE SEU POKEMON </h2>
+        <form action = "/add" method ="post">
+          
+            <label for = "nome"> Nome:</label>
+            <input type = "text" id = "nome" name = "nome"> 
+
+            <label for = "tipo"> Tipo:</label>
+            <input type = "text" id = "tipo" name = "tipo"> 
+
+            <label for = "categoria"> Categoria:</label>
+            <input type = "text" id = "categoria" name = "categoria"> 
+            
+            <label for = "imagem"> Imagem:</label>
+            <input type = "text" id = "imagem" name = "imagem">
+            <!--------Deseja acrescentar detalhes?--------->
+
+            <label for = "descricao"> Descrição: </label>
+            <input type = "text" id = "descricao" name = "descricao"> 
+            
+            <label for = "habilidade"> Habilidade:</label>
+            <input type = "text" id = "habilidade" name = "habilidade"> 
+            
+            <label for = "altura"> Altura:</label>
+            <input type = "text" id = "altura" name = "altura"> 
+
+            <label for = "peso"> Peso:</label>
+            <input type = "text" id = "peso" name = "peso"> 
+            
+            <button id = "btcadastrar" type = "submit">Cadastrar</button>
+        </form>
+    <!--
+    <form action = "/home">
+        <button id = "bthome" type = "submit">Deseja Fazer outro cadastro?</button>
+        </form>  -->
+    </main>
+    </section>
+</body>
+<script src = "script.js"></script>
+</html>
