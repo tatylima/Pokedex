@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Cadastro</title>
 </head>
-<body>
-    <section id = "cadastro">
-        <main>
+<body id = "bcadastro">
+     
+        <main>/</main>
+
+        <section id ="cadastro">
+
         <h2> CADASTRE SEU POKEMON </h2>
+
+        <button id ="btPokedex">
+        </button>
+
         <form action = "/add" method ="post">
           
             <label for = "nome"> Nome:</label>
@@ -23,9 +31,8 @@
             
             <label for = "imagem"> Imagem:</label>
             <input type = "text" id = "imagem" name = "imagem">
-            <!--------Deseja acrescentar detalhes?--------->
-
-            <label for = "descricao"> Descrição: </label>
+            
+            <label for = "descricao"> Descricao: </label>
             <input type = "text" id = "descricao" name = "descricao"> 
             
             <label for = "habilidade"> Habilidade:</label>
@@ -38,13 +45,11 @@
             <input type = "text" id = "peso" name = "peso"> 
             
             <button id = "btcadastrar" type = "submit">Cadastrar</button>
+        
+        </button>
         </form>
-    <!--
-    <form action = "/home">
-        <button id = "bthome" type = "submit">Deseja Fazer outro cadastro?</button>
-        </form>  -->
-    </main>
     </section>
+    </main>    
 </body>
-<script src = "script.js"></script>
+<script src = "./js/script.js"></script>
 </html>

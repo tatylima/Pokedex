@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Detalhes</title>
 </head>
 <body>
@@ -13,8 +14,8 @@
                 DETALHES 
             </h2>
             <form action = "/detalhes" method="get">
-    
-                <img src="<%= pokemon.imagem %>"/>
+            <div>
+            <img src="<%= pokemon.imagem %>"/>
                 <h2>
                     Nome: <%=pokemon.nome%>
                 </h2>
@@ -31,16 +32,16 @@
                     Descrição: <%=pokemon.descricao%>
                 </p>
                 <p>
-                    Habilidade: <%=pokemon.Habilidade%> 
+                    Habilidade: <%=pokemon.habilidade%> 
                 </p>
                 <p>
-                    Altura: <%=pokemon.Altura%> m
+                    Altura: <%=pokemon.altura%> m
                 </p>
                 <p>
-                    Peso: <%=pokemon.Peso%> Kg   
+                    Peso: <%=pokemon.peso%> Kg   
                 </p>
-            
-                <button id = "retorno" type = "submit">Retornar ao início</button>
+            </div>
+                <button id = "retorno" type = "submit">Retornar ao inicio</button>
         </form> 
     </section>
 </main>

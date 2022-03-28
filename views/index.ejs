@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Projeto Pokedex</title>
 </head>
-<body>
-    <header>
-        <h1>Pokedex</h1>
+<body id ="index">
+    <header id = "titulo">
+        <h1><img src="https://fontmeme.com/permalink/220327/0913d3934b448195aa912dee53a1cd26.png" alt="fonte-de-pokemon" border="0" width = "20%"></h1>
     </header>  
 <main>
     <section id="cards">
         <%pokedex.forEach((pokemon) =>{ %>
-        <a href = "/detalhes/<%= pokemon.id %>" >
-           <button>
+        <a href = "/detalhes/<%= pokemon.id %>">
+           <button id = "btcards">
                 <div class="card">
                     <img src="<%= pokemon.imagem %>" alt=""/>
                     <h2>
                         <%= pokemon.nome %>
                     </h2>
-                    <p>
+                    <p class="tipo">
                         Tipo: <%= pokemon.tipo %>
                     </p>
                     <p>
@@ -32,11 +32,12 @@
         </a>
     <% }) %>    
     </section>
+    <section>
         <form action = "/cadastro">
-        <button id = "btcadastro" type = "submit">Cadastre seu Pokemon</button>
+        <button id = "btCadastro" type = "submit">Cadastre seu Pokemon</button>
         </form>   
     </section>
 </main>
 </body>
-<script src = "script.js"></script>
+<script src = "./js/script.js"></script>
 </html>
